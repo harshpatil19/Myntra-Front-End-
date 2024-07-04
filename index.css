@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI, 
+    Roboto, Helvetica, Arial,sans-serif;/* this is font style for all*/
+    box-sizing: border-box; /*whenever we try to give border to specific element or header/footer then size of page might change so to avoid that we give the limitation to the end of the page.. so whatever changes happens that will happen inside the page without making any changes to tge page size*/
+
+}
+header{
+display: flex;/*to show header content vertically(by default it was horizontal)*/
+background-color: #ffffff; /*header background color*/
+height: 80px;
+justify-content: space-between; /*to give space between header content*/
+align-items: center; /*this will align all the header content(including logo)at the centre of the HEADER*/
+border-bottom:1px solid #b6b1b1 ;
+}
+.myntra_home{
+    height: 36px; /*to give height to logo*/
+
+}
+.logo_container{
+    margin-left: 4% ; /* to give margin from left to header */
+
+}
+.action_bar{
+    margin-right: 4%; /*to align logo and header content*/
+}
+
+.nav_bar{
+    display: flex;
+    min-width: 500px;
+    justify-content: space-between;/*to leave spaces evenly on all sides*/
+}
+.nav_bar a{  /*to modify the header fonts*/
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase; /*to do uppercase to fonts*/
+    text-decoration: none;
+    padding: 28px 0; /*this padding so to maintin the bottom color of men women etc so that after hovering on it it wont shake*/
+    border-bottom: 5px solid #ffffff; 
+}
+.nav_bar a:hover{ /*for the dropdown of the nav bar when we will hover n it*/
+    border-bottom: 4px solid skyblue ;
+}
+.nav_bar a sup{ /*to modify the super script of studio*/
+    color: #ff3f6c;
+    font-size: 10px; /*as studio has raise to new so it was not align with other fonts so to align it we maintained size*/
+}
+.search_bar{
+    height: 40px;
+    min-width: 400px;
+    width: 30%;
+    display:flex;
+    align-items: center;
+ 
+}
+.search_icon{
+    box-sizing: content-box;
+    height: 20px;
+    padding: 10px;
+    background-color: #f5f5f6;
+    color:#282c3f;
+    font-weight: 300;
+    border-radius:  4px 0 0 4px;
+}
+.search_input{ /*to modify the search bar*/
+    color: #696e79;
+background-color: #f5f5f6;
+flex-grow: 1;
+height: 40px;
+border: 0;/*it was highlighting the border so to avoid that we put it to 0*/
+border-radius: 0 4px 4px 0 ;
+}
+.action_bar{/* to inline the action icons one after another*/
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+}
+.action_container{
+    display: flex;
+    flex-direction: column;/* maintaini as column*/
+    align-items:center;/*to alighn symbol and its name in centre*/
+}
+
+/*---------------------------MAIN SECTION---------------------------------------------------------*/
+.banner_container{
+    margin: 40px 0;
+}
+.banner_image{
+    width: 100%;
+   
+}
+
+.category_heading{
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 1px 30px;
+    max-height: 5em;
+    font-weight: 700;
+    
+}
+
+.category_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+
+}
+.sale_item{
+width: 250px;
+}
+
+.footer_container{
+    padding: 30px 0px 40px 0px ;
+    background: #FAFBFC;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_column{
+    display: flex;
+    flex-direction: column;
+}
+.footer_column h3{
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.footer_column a{
+    color: #696b79;
+    font-size: 15px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.copyright{
+   color: #94969f;
+   text-align: end;
+   padding: 15px;
+}
